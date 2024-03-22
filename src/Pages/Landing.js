@@ -10,7 +10,6 @@ export default function Landing() {
     return (
         <main className="mt-[80px]">
               <Navbarr />
-              {/* <OurMenu /> */}
               <PicBoxes />
               <Picboxchild />
               <Footer />

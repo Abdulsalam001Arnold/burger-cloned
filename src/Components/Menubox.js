@@ -7,7 +7,7 @@ export default function Menubox() {
     const [menuImgList, setImgList] = useState(null)
 
     useEffect(() => {
-      fetch('http://localhost:8001/menuLists')
+      fetch('http://localhost:8000/menuLists')
       .then((res) => res.json())
       .then(data => setImgList(data))
     }, [])
@@ -23,7 +23,7 @@ export default function Menubox() {
                  <div key={m.id} className='flex flex-col w-[30%] overflow-hidden rounded-[10px] xl:shadow-xl'>
                     <img src={m.imgUrl} alt={m.title} className='w-full h-[200px]' />
 
-                    <h2 className='h-[45px] text-center text-[rgb(43,2,0)] font-bold text-2xl bg-white flex items-center justify-center'>{m.title}</h2>
+                    <h2 className='h-[45px] text-center text-[rgb(43,2,0)] font-bold font-serif text-2xl bg-white flex items-center justify-center'>{m.title}</h2>
 
                  </div>
 

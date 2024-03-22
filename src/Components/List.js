@@ -63,3 +63,69 @@ export const menuLists = [
         title: 'KING JR.MEALS'
     },
 ]
+
+export const offerList = [
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/17da7c76013ab0f2fd8ab60cfa711f2a16147526-800x513.png?w=320&q=40&fit=max&auto=format",
+        title: "CLICK & COLLECT FIRST ORDER: FREE WHOPPER WITH PURCHASE OVER £3",
+        info: "A free Whopper (642 Kcal) with your first purchase using Click & Collect with a minimum spend of £3. Participating restaurants only"
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/aec6bc7a77207a17a59004b444dc044bd86efa10-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "£5.99 LARGE WHOPPER®",
+        info: "WHOPPER® meal (991 Kcal)"
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/281e4f2132eaf4745b541cb9a1da1da541d69d40-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "£5.99 LARGE CHICKEN/VEGAN ROYALE MEAL",
+        info: "Large Chicken Royale® meal (945 Kcal) or Vegan Royale meal (946 Kcal)"
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/ffc40a7eeff13db3ff9b9f8446c1992cb8183c00-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "£10.99 x2 WHOPPER® MEALS",
+        info: "2 WHOPPER® meals (602 Kcal per meal)."
+    },
+    
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/e35f9ab77579a22a6efa23120091cc1c54999a1f-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "£10.99 2 CHICKEN/VEGAN ROYALE MEALS",
+        info: "2 Chicken Royale meals (883 Kcal per meal) or Vegan Royale meals (855 Kcal per meal)."
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/877bd2068624f705de3599adf33587165572787a-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "£4.99 MELT KING BOX",
+        info: "A Classic or BBQ Melt, 3 Chilli Cheese Bites or 4 Onion Rings, regular fries & drink (879 Kcal)."
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/fa0b576c58e98332d39d99244d6908b9c9ec1504-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "£1.99 6 CHILLI CHEESE BITES",
+        info: "The most moreish side you'll ever buy (416 Kcal)."
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/888a578cb15ea7717d11fe9410aafcaa1cc5f58b-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "DELIVERY FIRST ORDER: £9.99 2 WHOPPER/ROYALE MEALS",
+        info: "2 large Whopper meals"
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/6b68d97770ebef621f10d8f619d413075f7fb6ed-1450x500.png?w=1280&q=40&fit=max&auto=format",
+        title: "DELIVERY: £12 TWO WHOPPER/ROYALE, 2 LARGE FRIES",
+        info: "2 Whopper/Royale, 2 large fries."
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/b1e9056c10384bea3ce8d610745f395a13b67d57-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "DELIVERY: £12.99 2 GOURMET KING MEALS",
+        info: "2 large Steakhouse Angus meals."
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/842d5dd39506af56069597319043f5bdd9fba632-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "DELIVERY: £12.99 BUNDLE FOR ONE",
+        info: "A selection of burgers, King Loaded Fries and a side!"
+    },
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/6ec4f24f999a014cb3f089d6ca06b6375018af97-1000x850.png?w=320&q=40&fit=max&auto=format",
+        title: "DELIVERY: £17.99 BUNDLE FOR 2",
+        info: "Choose two burgers, King Loaded Fries and sides!"
+    },
+
+    {   imgUrl: "https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/6b68d97770ebef621f10d8f619d413075f7fb6ed-1450x500.png?w=1280&q=40&fit=max&auto=format",
+        title: "DELIVERY: £19.99 BUNDLE FOR 2",
+        info: "Choose two burgers, King Loaded Fries and sides!"
+    }
+]
