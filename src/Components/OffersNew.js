@@ -16,12 +16,12 @@ export default function OffersNew() {
 
   return (
 
-    <section className='bg-[rgb(245,235,220)] w-[100%] h-[110vh] pb-[10px]'>
+    <section className='bg-[rgb(245,235,220)] w-[100%] h-[100%] pb-[10px]'>
 
       <OfferTag />
 
 
-    <div className='flex items-center w-[100%] h-[90%]'>
+    <div className='flex items-center w-[100%] h-[100%]'>
         <div className='bg-inherit w-[30%] h-[100%] overflow-y-scroll pb-[10px]'>
         <ul className=''>
         {

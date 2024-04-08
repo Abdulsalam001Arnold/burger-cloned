@@ -10,13 +10,13 @@ export default function OfferList() {
     const [largeImage, setLargeImgList] = useState(null)
 
     useEffect(() => {
-      fetch('http://localhost:8000/offerList')
+      fetch('http://localhost:3001/offerList')
       .then((res) => res.json())
       .then(data => setOfferImgList(data))
     }, [])
 
     useEffect(() => {
-      fetch('http://localhost:8000/largeImageList')
+      fetch('http://localhost:3001/largeImageList')
       .then((res) => res.json())
       .then(data => setLargeImgList(data))
     }, [])

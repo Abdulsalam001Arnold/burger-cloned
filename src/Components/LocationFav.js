@@ -7,7 +7,7 @@ export default function LocationFav({ displayFav }) {
     const [selectedNav, setSelectedNav] = useState(null)
 
     useEffect(() => {
-        fetch('http://localhost:8000/favLocRec')
+        fetch('http://localhost:3001/favLocRec')
         .then((res) => res.json())
         .then(data => setSelectedNav(data))
       }, [])

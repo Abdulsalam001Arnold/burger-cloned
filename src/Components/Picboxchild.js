@@ -1,28 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../images/offerimg-1340x2014.webp'
+import logo from '../images/new-phone.png'
 import playstore from "../images/playstore.png"
 import applestore from "../images/applestore.png";
 
 function Picboxchild() {
   return (
-    <div className='bg-[rgb(240,230,204)] w-5/5 h-3/5 pt-[30px] overflow-hidden'>
-        <div className='flex bg-[rgb(240,230,204)] w-[100%] h-[100%] ml-[50%]'>
-        <Link href='./'><img src={logo} alt='' className='' /></Link>
 
-        <div className='flex flex-col w-[20%] h-[100%]'>
-            <h1 className='font-extrabold text-6xl text-[rgb(43,2,0)] m-auto mt-5'>
-            Save £££
-            With offers on demand  
-            </h1>
-            <div className='flex items-center gap-11 mt-[70px]'>
-                <Link href='./'><img src={applestore} alt='' className='w-[140px] h-[40px] rounded-[5px]' /></Link>
-               <Link href='./'><img src={playstore} alt='' className='w-[140px] h-[40px] rounded-[5px]' /></Link>   
-            </div>
-            <p className='text-amber-950 font-semibold mt-16'>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.</p>
+
+    <div className='w-full px-12 py-12 bg-[rgb(215,35,0)] lg:grid lg:grid-cols-3 gap-10 items-center'>
+       <Link href='./'><img src={logo} alt='' className='w-[37rem] lg:ml-5 col-span-1' /></Link>
+       <div className='col-span-2'>
+        <h1 className='text-white font-extrabold text-6xl'>Download our app and discover the incredible offers we have for you!</h1>
+        <div className='flex gap-5 mt-5 mb-6 rounded overflow-hidden'>
+          <img src={playstore} className='w-[10rem]'/>
+          <img src={applestore} className='w-[10rem]'/>
+
         </div>
-        </div>
+        <span className='text-white text-xs font-bold lg:max-w-16'>Apple and the Apple logo are trademarks of Apple Inc., registered in the US and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms and Conditions apply.</span>
+       </div>
     </div>
+    
+       
+
+        
   )
 }
 

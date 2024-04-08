@@ -24,44 +24,45 @@ export default function OffersRight() {
   // const [displayModal, setDisplayModal] = useState(false)
 
   return (
-    <div className='flex flex-col justify-center bg-inherit w-[70%] h-[100%]'>
+    <div className='flex flex-col justify-evenly items-center w-[70%] h-[100%] mt-0'>
  {
               
-              <div className='bg-slate-100 flex flex-col items-center justify-center w-[100%] h-[40%] text-[rgb(43,2,0)] font-extrabold text-[25px] text-center pt-[10px]'>
-                   <img src={selectedOffer.imgUrl} alt={selectedOffer.title} className='w-[40%] h-[100%] m-auto' />
+              <div className='bg-slate-100'>
+                   <img src={selectedOffer.imgUrl} alt={selectedOffer.title} className='object-cover w-full lg:items-center' />
               </div>
   }
 
-     <div className='bg-inherit w-[100%] h-[60%]'>
+     <div className='bg-inherit w-full'>
 
-         <div className='divide-[rgb(43,2,0)] h-[40%] mt-3'>
-               <div className='leading-tight'>
-                 <h2 className='text-[rgb(43,2,0)] font-extrabold text-[25px] max-w-[75%] h-[45%] ml-[13%] text-center'>{selectedOffer.title} </h2>
+         <div className='mt-1'>
+               <div className='leading-tight mt-1'>
+                 <h2 className='text-[rgb(43,2,0)] font-extrabold text-3xl w-full text-center'>{selectedOffer.title} </h2>
                </div>
-                 <p className='text-[rgb(43,2,0)] text-[10px] font-extrabold mt-2 ml-[35%] max-w-[36%] h-[30%]'>A free Whopper (642 Kcal) with your first purchase using Click & Collect with a minimum spend of £3. Participating restaurants only</p>
+                 <p className='text-[rgb(43,2,0)] md:w-full text-xs text-center font-semibold'>A free Whopper (642 Kcal) with your first purchase using Click & Collect with a minimum spend of £3. Participating restaurants only.</p>
+                 
          </div>
 
-         <div className='opacity-70 ml-[10%] mt-[-60px]'>
-           <p className='text-[rgb(43,2,0)] text-[11px] font-bold ml-[41%]'>How to redeem:</p>
-           
-           <p className='text-[rgb(43,2,0)] text-[11px] font-bold ml-[30%]'>1) Sign in, click 'add to mobile order' & select restaurant</p>
-             <p className='text-[rgb(43,2,0)] text-[11px] font-bold ml-[38%]'>2) Add Whopper to basket</p>
-             <p className='text-[rgb(43,2,0)] text-[11px] font-bold ml-[31%]'>3) Add one or more products so basket total is over £3</p>
-             <p className='text-[rgb(43,2,0)] text-[11px] font-bold ml-[41%]'>4) Checkout</p>
-           
+         <div>
+          <h5 className='text-[rgb(43,2,0)] md:w-full text-xs text-center font-semibold mt-2'>How to Redeem:</h5>
+          <ul className='text-[rgb(43,2,0)] md:w-full text-xs text-center font-semibold mt-2'>
+            <li>1) Sign in, click 'add to mobile order' & select restaurant </li>
+            <li>2) Add Whopper to basket</li>
+            <li>3) Add one or more products so basket total is over £3</li>
+            <li>4) Checkout</li>
+          </ul>
          </div>
+        <div className='w-full flex flex-col items-center mt-3'>
+         <button className='bg-[rgb(214,35,0)] hover:cursor-pointer hover:bg-[rgb(160,85,70)] px-3 py-1 rounded-full text-center items-center'>
+           <span className='flex items-center gap-2'><MdOutlineSmartphone className='text-white'/> <p className='text-white'>Add to Offer</p></span>
+         </button>
 
-         <div className='flex flex-col items-center ml-[1%] pt-[20px] mt-[5px]'>
-           <button className='flex items-center gap-3 w-[23%] h-[40px] bg-[rgb(214,35,0)] text-white font-bold rounded-[50px]'>
-             <MdOutlineSmartphone className='ml-[30px] text-[25px] font-extrabold' />
-             <h2 className='text-[15px] font-extrabold'>Redeem Reward</h2>
-           </button>
-           <div className='flex flex-col items-center justify-center'>
-           <p className='text-[rgb(214,35,0)] text-[8.5px] font-semibold mt-[20px]'>Your subtotal must be £2.91 to redeem this offer. Add £2.91 to redeem</p>
-           <p className='text-[rgb(43,2,0)] text-[8.5px] font-semibold w-[40%] ml-[5%] mt-5'>A free Whopper with your first purchase using Click and Collect. Offer must be redeemed with first purchase with a minimum spend of £3. Not valid in conjunction with any other offer. One voucher per transaction. Valid only in the UK. Subject to availability. Voucher valid at participating restaurants where Click and Collect is available only. Not valid at Burger King motorway service locations, airports train stations and holiday parks. © 2022 Burger King Europe GmbH. All rights reserved.</p>
-           </div>
+         <p className='text-center text-xs text-[rgb(214,35,0)] mt-3'>Your subtotal must be £2.91 to redeem this offer. Add £2.91 to redeem</p>
 
+         <p className='text-center text-xs text-[rgb(43,2,0)]'>A free Whopper with your first purchase using Click and Collect. Offer must be redeemed with first purchase with a minimum spend of £3. Not valid in conjunction with any other offer. One voucher per transaction. Valid only in the UK. Subject to availability. Voucher valid at participating restaurants where Click and Collect is available only. Not valid at Burger King motorway service locations, airports train stations and holiday parks. © 2022 Burger King Europe GmbH. All rights reserved.</p>
          </div>
+        
+
+         
      </div>
      </div>
 )

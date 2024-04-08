@@ -8,12 +8,12 @@ export default function Deliverys() {
     
   return (
     <div className='bg-[rgb(245,235,220)] w-full h-[93svh] overflow-hidden font-serif'>
-    <div className='flex items-center gap-[20%] bg-[rgb(214,35,0)] w-full h-[70px] m-auto'>
-        <div className='ml-[46.5%]'>
-            <h1 className='text-white text-3xl font-extrabold'>Locations</h1>
+    <div className='text-center bg-[rgb(214,35,0)] w-full h-[70px] m-auto grid grid-cols-3 items-center'>
+        <div className='col-span-2'>
+            <h1 className='text-white text-center text-3xl font-extrabold'>Locations</h1>
         </div>
 
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center col-span-1'>
             <h1 className='text-white text-xl font-extrabold'>Map</h1>
             <RiMap2Line className='text-white text-3xl' />  
         </div>

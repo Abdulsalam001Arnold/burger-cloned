@@ -13,18 +13,13 @@ export default function Order() {
     })
 
   return (
-    <section className='bg-[rgb(245,235,220)] w-full h-[93svh] overflow-hidden font-serif'>
-        <div className='flex items-center gap-[20%] bg-[rgb(214,35,0)] w-full h-[70px] m-auto'>
-            <div className='ml-[46.5%]'>
-                <h1 className='text-white text-3xl font-extrabold'>Locations</h1>
-            </div>
+    <section className='bg-[rgb(245,235,220)] w-full h-[150svh] overflow-hidden font-serif'>
+    <div className='bg-[rgb(214,35,0)] py-10 px-2 mt-20 grid grid-cols-3 w-full'>
+    <div></div>
+    <h1 className='text-white text-4xl text-center'>Locations</h1>
+    <span className='flex ml-7 items-center'><p className='text-white text-3xl'>Map</p> <RiMap2Line className='text-white text-4xl'/></span>
+    </div>
 
-            <div className='flex items-center gap-2'>
-                <h1 className='text-white text-xl font-extrabold'>Map</h1>
-                <RiMap2Line className='text-white text-3xl' />  
-            </div>
-
-        </div>
 
         <div className='flex items-center gap-[30px] ml-[23.5%] mt-8'>
             <div className='flex items-center text-lg font-medium border-gray-300'>
@@ -39,7 +34,7 @@ export default function Order() {
         </div>
 
         <div className=''>
-            <ul className='flex items-center justify-center list-none mr-[5%] mt-11 text-xl font-semibold w-[60%] ml-[20.5%] relative'>
+            <ul className='grid grid-cols-3 gap-x-16 items-center justify-evenly list-none mr-[5%] mt-11 text-xl font-semibold w-[60%] ml-[20.5%] relative'>
                 <div className={`absolute bottom-0 bg-red-600 h-1 w-[33.33%] ${displayFav.fav ? 'left-[33.33%]' : displayFav.recent ? 'left-[66.66%]' : 'left-0'} `}></div>
                 <div className='hover:border-b-[rgb(214,35,0)] w-[33.33%] flex flex-col border-[3px] border-x-0 border-t-0 ease-in-out cursor-pointer pb-[15px]'>
                     <Link to='' className='w-[100%] ml-[40%] flex items-center' onClick={() => setDisplayFav({nearby: true, fav: false, recent: false})}><li>Nearby</li></Link>
@@ -48,7 +43,7 @@ export default function Order() {
                     <Link to='' className='flex items-center w-[100%] ml-[35%]' onClick={() => setDisplayFav(prev => {return {...prev, fav: true, nearby: false}})}><li>Favourites</li></Link>
                 </div>
                 <div className='hover:border-b-[rgb(214,35,0)] w-[33.33%] flex flex-col border-[3px] border-x-0 border-t-0 ease-in-out cursor-pointer pb-[15px]'>
-                    <Link to='' className='flex items-center w-[100%] ml-[35%]' onClick={() => setDisplayFav(prev => {return {fav: false, recent: true, nearby: false}})}><li>Recents</li></Link>
+                    <Link to='' className='flex items-center w-[100%] ml-[40%]' onClick={() => setDisplayFav(prev => {return {fav: false, recent: true, nearby: false}})}><li>Recents</li></Link>
                 </div>
             </ul>
             <div className='flex items-center w-[60%] border-[rgba(0,0,0,0.1)] border-[1px] ml-[20.5%]'></div>

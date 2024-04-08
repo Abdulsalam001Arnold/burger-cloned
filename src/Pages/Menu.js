@@ -6,11 +6,11 @@ import OurMenu from '../Components/OurMenu'
 
 function Menu() {
   return (
-    <div className='flex flex-col'>
+    <div className=''>
       <div>
-        <Navbar className='fixed z-[999px]' />
+        <Navbar/>
       </div>
-      <div className='mt-24'>
+      <div className=''>
         <OurMenu className='' />
         <Menubox />
         <Footer className='' />
